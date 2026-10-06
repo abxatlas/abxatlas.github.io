@@ -1,0 +1,34 @@
+/* Atkinson Hyperlegible and Fredoka (SIL Open Font License), the same files the app embeds. */
+@font-face{font-family:'Atkinson Hyperlegible';font-weight:400;font-display:swap;src:url(fonts/atkinson-400.woff2) format('woff2')}
+@font-face{font-family:'Atkinson Hyperlegible';font-weight:700;font-display:swap;src:url(fonts/atkinson-700.woff2) format('woff2')}
+@font-face{font-family:'Fredoka';font-weight:600;font-display:swap;src:url(fonts/fredoka-600.woff2) format('woff2')}
+
+/* The app's colours, flat like the lessons: no gradients, no glow. */
+:root{
+  color-scheme:dark;
+  --bg:#0e1630; --panel:#1a2754; --line:#31437f;
+  --ink:#fff8ec; --dim:#b1bbdf; --gold:#ffc93c;
+  --body:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --round:'Fredoka',ui-rounded,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+main{max-width:680px;margin:0 auto;padding:28px 16px 56px;display:flex;flex-direction:column;gap:16px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:4px}
+.mark{font:600 22px/1 var(--round);color:var(--ink);text-decoration:none}
+.mark span{color:var(--gold)}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{font-weight:700;font-size:15px;color:var(--dim);text-decoration:none}
+nav a:hover,nav a[aria-current]{color:var(--ink)}
+
+h1{margin:0;font:700 34px/1.15 var(--body);text-wrap:balance}
+.lede{margin:0;color:var(--dim)}
+section{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px}
+h2{margin:0 0 6px;font:700 20px/1.25 var(--body);color:var(--gold)}
+p{margin:0}
+p+p{margin-top:10px}
+ul{margin:0;padding-left:20px}
+li+li{margin-top:4px}
+a{color:var(--gold)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+footer{margin-top:12px;font-size:14px;color:var(--dim);text-align:center}
